@@ -1,0 +1,44 @@
+/* Nämä tyylimääreet kohdistuvat kaikkiin elementteihin bodyn sisällä */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* Nämä tyylimääreet kohdistuvat kaikkiin elementteihin */
+* {
+    color: black;
+}
+a, p {
+    color: green;
+}
+/* NAVBAR */
+ul.navbar {
+    padding: 5px;
+    display: block;
+}
+/* Kaikille li-elementeille */
+.navbar > li {
+    /* li-elementit on oletuksena blokkeja -> muutetaan inlineksi, jotta saadaan samalle riville */
+    display: inline; 
+    border-right: 1px solid black;
+}
+.navbar li:last-child {
+    border: none;   
+}
+.navbar a {
+    padding: 5px;
+}
+ul a {
+    /* Poistetaan linkeiltä alleviivaus */
+    text-decoration: none;
+}
+a:hover {
+    color: blue;
+}
+.beige {
+    background-color: bisque;
+}
+ul + p {
+    border-top: 1px solid black;
+}
+ul ~ p {
+    color: red;
+}

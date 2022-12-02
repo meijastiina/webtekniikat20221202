@@ -33,6 +33,12 @@ ul a {
 a:hover {
     color: blue;
 }
+a[target="_blank"] {
+    font-weight: bold;
+}
+[type="number"] {
+    border: 1px solid red
+}
 .beige {
     background-color: bisque;
 }
@@ -41,4 +47,17 @@ ul + p {
 }
 ul ~ p {
     color: red;
+}
+.col {
+    border: 1px dashed darkmagenta;
+}
+[class*="box"] {
+    border: 1px solid black;
+}
+td {
+    border: 1px solid black;
+    padding: 5px;
+}
+tr:nth-child(odd) {
+    background-color: #efefef;
 }
